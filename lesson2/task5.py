@@ -24,12 +24,14 @@ print(id(prices))
 prices.sort()
 print(id(prices))
 
+print("По возрастанию")
+
 for price in prices:
     rub = int(price)
     kop = int(price * 100) % 100
     print(f'{rub} руб {kop:02} коп')
 
-print("______")
+print("По убыванию")
 
 prices2 = sorted(prices, reverse=True)
 print(id(prices2))
@@ -38,7 +40,7 @@ for price in prices2:
     kop = int(price * 100) % 100
     print(f'{rub} руб {kop:02} коп')
 
-print("______")
+print("5 самых дорогих")
 
 
 for price in prices[5:]:
