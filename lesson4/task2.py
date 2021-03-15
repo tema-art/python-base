@@ -69,7 +69,7 @@ def get_currency_rate(currency):
     elif currency.upper() == 'EUR':
         print("EUR", euro)
     else:
-        return None
+        print(None)
 
 
 get_currency_rate('usd')
